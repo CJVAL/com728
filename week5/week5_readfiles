@@ -1,0 +1,10 @@
+file_path = ("/Users/cj/com728/week5/pratice_files/days.txt")
+
+try:
+    with open(file_path) as my_file:
+        lines = my_file.readlines()
+
+    for line in lines:
+        print(line)
+except IOError:
+    print("Error, cannot read file!")
